@@ -17,19 +17,19 @@ def get_parity(number):
 def main():
     username = greeting()
     print('Answer "yes" if the number is even, otherwise answer "no"')
-    correct_answer = 3
-    while correct_answer > 0:
+    count_correct = 3
+    while count_correct > 0:
         hidden_number = get_random_number()
-        parity = get_parity(hidden_number)
+        answer = get_parity(hidden_number)
         print(f'Question: {hidden_number}')
-        answer = prompt.string('Your answer: ')
-        if answer == parity:
+        user_answer = prompt.string('Your answer: ')
+        if answer == user_answer:
             print('Correct!')
-            correct_answer -= 1
+            count_correct -= 1
         else:
-            print(f'"{answer}" is wrong answer ;(. Correct answer was "{parity}"')
+            print(f'"{answer}" is wrong answer ;(. Correct answer was "{answer}"')
             print(f"Let's try again, {username}!")
-            correct_answer = 3
+            count_correct = 3
     print(f'Congratulations, {username}!')
 
 
