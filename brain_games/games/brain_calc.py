@@ -13,7 +13,6 @@ def get_operator():
     operators = ["+", "-", "*"]
     sign = get_random_number(0,2)
     return operators[sign]
-    '''random operator'''
 
 
 def calculating(first, second, operator):
