@@ -1,5 +1,4 @@
 #!/usr/bin/env python3
-from ast import operator
 from brain_games.cli import greeting
 from random import randint
 import prompt
