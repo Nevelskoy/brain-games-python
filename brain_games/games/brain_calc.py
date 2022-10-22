@@ -1,11 +1,7 @@
 #!/usr/bin/env python3
 from brain_games.cli import greeting
-from random import randint
+from brain_games.scripts.unils import get_random_number
 import prompt
-
-
-def get_random_number(start=1, end=100):
-    return randint(start, end)
 
 
 def get_operator():

@@ -1,11 +1,7 @@
 #!/usr/bin/env python3
 from brain_games.cli import greeting
-from random import randint
+from brain_games.scripts.unils import get_random_number
 import prompt
-
-
-def get_random_number():
-    return randint(1, 100)
 
 
 def get_parity(number):
