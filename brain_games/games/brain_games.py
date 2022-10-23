@@ -1,9 +1,12 @@
 #!/usr/bin/env python3
-from brain_games.cli import greeting
+from brain_games.cli import greeting_user
+
+
+DESCRIPTION = 'Choose a game!'
 
 
 def main():
-    greeting()
+    greeting_user()
 
 
 if __name__ == '__main__':

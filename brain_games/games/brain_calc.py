@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
-from brain_games.cli import greeting
-from brain_games.scripts.unils import get_random_number
+from brain_games.cli import greeting_user
+from brain_games.scripts.utils import get_random_number
 import prompt
 
 
@@ -19,7 +19,7 @@ def calculating(first, second, operator):
 
 
 def main():
-    username = greeting()
+    username = greeting_user()
     print('Answer "yes" if the number is even, otherwise answer "no"')
     count_correct = 3
     while count_correct > 0:
