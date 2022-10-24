@@ -2,24 +2,17 @@ from brain_games.cli import greeting_user, get_user_answer
 
 
 ROUNDS = 3
-
-def get_question(game):
-    return game.make_question()
-
-# def check_answer(game, question):
-#     return game.correct_answer(question)
+  
 
 def run(game=None):
     username = greeting_user()
-    print(game.DESCRIPTION)
     if game:
+        print(game.DESCRIPTION)
         completed_round = 0
         while ROUNDS > completed_round:
-            question = get_question(game)
-            print(f'Question {question}')
-
+            question, correct_answer = game.make_question()
+            print(f'Question: {question}')
             answer = get_user_answer()
-            correct_answer = game.correct_answer(question)
             if answer == correct_answer:
                 print('Correct!')
                 completed_round += 1
@@ -29,7 +22,5 @@ def run(game=None):
                 print(f"Let's try again, {username}!")
         print(f'Congratulations, {username}!')
 
+#def engine(game):
 
-#TODO:
-# 1. Сформировать в make_qustion возврат вопроса и верного ответа
-# 2. Разделить логику run - выполнение основной логики игрового процесса, engine - обработка данных каждой игры
