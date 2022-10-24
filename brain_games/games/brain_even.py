@@ -6,12 +6,9 @@ DESCRIPTION = 'Answer "yes" if the number is even, otherwise answer "no"'
 
 
 def get_parity(number):
-    if number % 2 == 0:
-        return 'yes'
-    return 'no'
-
+    return 'no' if number % 2 else 'yes'
 
 def make_question():
-    number = get_random_number()
-    correct_answer = get_parity(number)
-    return number, correct_answer
+    question = get_random_number()
+    correct_answer = get_parity(question)
+    return question, correct_answer
