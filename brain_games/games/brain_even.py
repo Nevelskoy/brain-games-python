@@ -2,7 +2,7 @@
 from brain_games.scripts.utils import get_random_number
 
 
-DESCRIPTION = 'Answer "yes" if the number is even, otherwise answer "no"'
+DESCRIPTION = 'Answer "yes" if the number is even, otherwise answer "no".'
 
 
 def get_parity(number):

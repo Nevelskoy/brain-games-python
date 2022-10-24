@@ -3,7 +3,7 @@ from brain_games.cli import greeting_user, get_user_answer
 
 ROUNDS = 3
 
-
+#TODO: need username?! ask only once?
 def run(game=None):
     username = greeting_user()
     if game:
