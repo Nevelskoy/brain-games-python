@@ -22,8 +22,8 @@ requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
 
 [tool.poetry.scripts]
-brain-games = "brain_games.scripts.brain_games_start:main"
-brain-even = "brain_games.scripts.brain_even_start:main"
-brain-calc = "brain_games.scripts.brain_calc_start:main"
-brain-gcd = "brain_games.scripts.brain_gcd_start:main"
-brain-progression = "brain_games.scripts.brain_progression_start:main"
+brain-games = "brain_games.scripts.brain_games:main"
+brain-even = "brain_games.scripts.brain_even:main"
+brain-calc = "brain_games.scripts.brain_calc:main"
+brain-gcd = "brain_games.scripts.brain_gcd:main"
+brain-progression = "brain_games.brain_progression:main"
