@@ -7,11 +7,11 @@ ROUNDS = 3
 def run(game=None):
     username = greeting_user()
     if game:
+        print(game.DESCRIPTION)
         engine(game, username)
 
 
 def engine(game, username):
-    print(game.DESCRIPTION)
     completed_round = 0
     while ROUNDS > completed_round:
         question, correct_answer = game.make_question()
@@ -21,7 +21,7 @@ def engine(game, username):
             print('Correct!')
             completed_round += 1
         else:
-            print(f'"{answer}" is wrong answer ;(. Correct answer was "{correct_answer}"')
-            completed_round = 0
-            print(f"Let's try again, {username}!")
-    print(f'Congratulations, {username}!')
+            print(f'"{answer}" is wrong answer ;(. \
+                 Correct answer was "{correct_answer}"')
+            return print(f"Let's try again, {username}!")
+    return print(f'Congratulations, {username}!')
