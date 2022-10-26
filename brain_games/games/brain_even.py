@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 from brain_games.scripts.utils import get_random_number
 
 
