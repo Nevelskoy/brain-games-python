@@ -11,7 +11,7 @@ def get_crux(progression):
     hidden_num = str(progression[hidden_index])
     progression[hidden_index] = '..'
     for item in progression:
-        progression_crux += f' {str(item)}'
+        progression_crux += f'{item} '
     return progression_crux, hidden_num
 
 
