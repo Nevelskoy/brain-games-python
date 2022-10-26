@@ -9,7 +9,7 @@ def run(game=None):
     if game:
         engine(game, username)
 
-#TODO: improve logic
+
 def engine(game, username):
     print(game.DESCRIPTION)
     completed_round = 0

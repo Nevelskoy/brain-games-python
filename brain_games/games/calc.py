@@ -7,7 +7,7 @@ DESCRIPTION = 'What is the result of the expression?'
 
 def get_operator():
     operators = ["+", "-", "*"]
-    sign = get_random_number(0,2)
+    sign = get_random_number(0, 2)
     return operators[sign]
 
 
@@ -16,9 +16,10 @@ def calculating(first, second, operator):
         return first + second
     elif operator == '-':
         return first - second
-    else: return first * second
+    else:
+        return first * second
 
-   
+
 def make_question():
     first = get_random_number()
     second = get_random_number()

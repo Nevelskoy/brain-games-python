@@ -5,7 +5,8 @@ DESCRIPTION = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 
 def is_Prime(number):
-    if number <= 1: return False
+    if number <= 1:
+        return False
     for i in range(2, number - 1):
         if number % i == 0:
             return False

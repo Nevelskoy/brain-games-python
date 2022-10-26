@@ -5,8 +5,9 @@ DESCRIPTION = 'Find the greatest common divisor of given numbers.'
 
 
 def get_gcd(first, second):
-    if second == 0: return first
-    return get_gcd(second, first % second) 
+    if second == 0:
+        return first
+    return get_gcd(second, first % second)
 
 
 def make_question():
