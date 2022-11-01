@@ -10,6 +10,6 @@ The package contains five simple mathematics quiz games:
 - Arithmetic progression `brain-progression`
 - Prime number `brain-prime`
 
-An analogue of the game, implemented on [Javascript](https://github.com/Nevelskoy/brain-games-js).
+An analogue of the project, implemented on [Javascript](https://github.com/Nevelskoy/brain-games-js).
 
 This is the first of four training projects on the Python Software Developer course on [Hexlet.io](https://ru.hexlet.io/professions/python/projects/49)
